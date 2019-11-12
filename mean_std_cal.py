@@ -15,7 +15,7 @@ from torch.utils.data import DataLoader
 import torchvision
 
 import sys
-from data.datasets1 import BirdsDataset
+from datasets1 import BirdsDataset
 from torchvision import transforms
 print("PyTorch Version: ",torch.__version__)
 print("Torchvision Version: ",torchvision.__version__)
