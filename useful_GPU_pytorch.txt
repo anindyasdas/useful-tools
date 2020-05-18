@@ -1,0 +1,31 @@
+torch.cuda.device_count() #shows number of devies available if total available gpus is 8 it will show 8
+torch.cuda.set_device(1)    #sets the default device to Cuda:1
+torch.cuda.current_device() #shows default device 
+
+#####Ways of using GPU###########################
+1. os.environ['CUDA_VISIBLE_DEVICES']='5,6,7,0' inside your code
+or CUDA_VISIBLE_DEVICES=5,6,7,0 python myprog.py
+
+This will change the indices and visiblity of available devices i.e, if total available devices are 8, it will limit it to 4(torch.cuda.device_count() gives 4);
+with new indices i.e
+5-->Cuda:0
+6-->Cuda:1
+7-->Cuda:3
+0-->Cuda:3
+default value is always cuda:0(5 n this case) unless set by torch.cuda.set_device(integer)
+############################################################
+2. if CUDA_VISIBLE_DEVICES are not used then absolutes values are being used by the program
+if total available devices are 8 , torch.cuda.device_count() in the program shows 8
+Absolute device value remains i.e
+0-->cuda:0
+1-->cuda:1
+2-->cuda:2
+3-->cuda:3
+and so on
+default value is always cuda:0(0 n this case) unless set by torch.cuda.set_device(integer)
+##############################################################
+nn.DataParallel(model) uses all visible devices, unless specified by the gpu_ids
+all the data and model must be sent to default device either using .cuda() or to(device) before being distributed parallelly
+so nn.DataParallel(model) followed by model.cuda()
+##################################################################
+device=torch.device("cuda") sets to default device unless specified as 'cuda:0'
