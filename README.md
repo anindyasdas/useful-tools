@@ -9,7 +9,12 @@ all_score0.py calculates :
   To install pycocoevalcap and the pycocotools dependency, run:
   pip install git+https://github.com/salaniz/pycocoevalcap
   this program uses pycocoevalcap from https://github.com/salaniz/pycocoevalcap
-  
-  python  python all_score0.py candidateb.txt referenceb.txt #(if single reference)
-  python all_score0.py candidateb.txt reference1.txt reference2.txt reference3.txt (multiple references)
+  #(if single reference) run:
+  ```
+  python  python all_score0.py candidateb.txt referenceb.txt 
+  ```
+  if (multiple references) run:
+  ```
+  python all_score0.py candidateb.txt reference1.txt reference2.txt reference3.txt 
+  ```
   ################################################################################################
