@@ -13,6 +13,6 @@ all_score0.py calculates :
   pip install git+https://github.com/salaniz/pycocoevalcap
   this program uses pycocoevalcap from https://github.com/salaniz/pycocoevalcap
   
-  python  python all_score0.py candidateb.txt referenceb.txt #(if single reference)
+  python  python all_score0.py candidateb.txt referenceb.txt #(if single reference)\n
   python all_score0.py candidateb.txt reference1.txt reference2.txt reference3.txt (multiple references)
   ################################################################################################
