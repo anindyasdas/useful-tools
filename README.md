@@ -9,7 +9,7 @@ Some useful tools
  ```
   pip install git+https://github.com/salaniz/pycocoevalcap
  ```
- --this program uses pycocoevalcap from https://github.com/salaniz/pycocoevalcap
+ - this program uses pycocoevalcap from https://github.com/salaniz/pycocoevalcap
   #(if single reference) run:
   ```
   python  python all_score0.py candidateb.txt referenceb.txt 
