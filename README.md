@@ -3,8 +3,8 @@ Some useful tools
 
 
 ## ALL SCORES: ## 
---all_score0.py calculates : ["Bleu_1", "Bleu_2", "Bleu_3", "Bleu_4"]),"METEOR", "ROUGE_L", "CIDEr")
---Before Running install pycocoevalcap :
+- all_score0.py calculates : ["Bleu_1", "Bleu_2", "Bleu_3", "Bleu_4"]),"METEOR", "ROUGE_L", "CIDEr").
+- Before Running install pycocoevalcap.
  --To install pycocoevalcap and the pycocotools dependency, run:
  ```
   pip install git+https://github.com/salaniz/pycocoevalcap
