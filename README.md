@@ -2,7 +2,7 @@
 Some useful tools
 
 
-## 1 ALL SCORES: ## 
+## ALL SCORES: ## 
 --all_score0.py calculates : ["Bleu_1", "Bleu_2", "Bleu_3", "Bleu_4"]),"METEOR", "ROUGE_L", "CIDEr")
 --Before Running install pycocoevalcap :
  --To install pycocoevalcap and the pycocotools dependency, run:
@@ -18,4 +18,4 @@ Some useful tools
   ```
   python all_score0.py candidateb.txt reference1.txt reference2.txt reference3.txt 
   ```
-  ################################################################################################
+  #############################################
