@@ -2,5 +2,5 @@ Inception Score model used in STACKGAN++ paper
 Birds has 50 validation classes and 150 test classes as per training in StackGan paper; so inception V3 model validation set is trained on validation set
 100 classes for flower 
 https://github.com/hanzhanggit/StackGAN-inception-model
-
+requirements : pip install scipy==1.1.0 
  python inception_score.py  --checkpoint_dir 'birds_valid299/model.ckpt' --image_folder '/home/das/dev/img_out/images'  
