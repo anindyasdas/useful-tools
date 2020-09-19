@@ -174,7 +174,7 @@ x=re.findall("^(IMG\d+)\.png$",file_name)
 ```
 
 ### Regex 16:
-- \\ escaping special charecter
+- \\ escaping special character
 
 ```python
  #special characters [ \ ^ $ . | ? * + ( ) have special meaning in a regex engine. Let’s say we want to find literally a dot. Not “any character”, but just a dot. To use a special character as a regular one, prepend it with a backslash: \..
