@@ -42,7 +42,7 @@ x = re.findall("he..o", txt)
 #Search for a sequence that starts with "he", followed by two (any) characters, and an "o"
 ```
 ### Regex 4:
-- * Zero or more occurrences
+- \* Zero or more occurrences
 ```python
 txt = "m ma mab mabi mabin mabii mabiiii mabiiiinlp"
 #Check if the string contains "ab" followed by 0 or more "i" characters
