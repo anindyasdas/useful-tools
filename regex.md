@@ -231,7 +231,7 @@ x = re.findall(r"\Bain", txt)
 
 *positive look ahead*
 
-- It matchs something that is followed by something else eg. ol(?=k) it matches 'ol' that is followed by 'k' without making the capturing group 'k' as part of the match 
+- It matches something that is followed by something else eg. ol(?=k) it matches 'ol' that is followed by 'k' without making the capturing group 'k' as part of the match 
 
 ```python
 txt='I live in kolkata'
