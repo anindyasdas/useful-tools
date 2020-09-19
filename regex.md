@@ -229,13 +229,13 @@ x = re.findall(r"\Bain", txt)
 - The lookahead itself is not a capturing group. It is not included in the count towards numbering the backreferences.
 - In order to store the match of the regex inside a lookahead, one has to put capturing parentheses around the regex : (?=(regex))
 
-*positive look ahead*
+*Positive Look Ahead*
 
 - It matches something that is followed by something else eg. ol(?=k) it matches 'ol' that is followed by 'k' without making the capturing group 'k' as part of the match 
 
 ```python
 txt='I live in kolkata'
-#positive Look Ahead
+#Positive Look Ahead
 re.findall('ol(?=ka)',txt)
  ['ol']
 re.findall('ol(?=(ka))',txt)
