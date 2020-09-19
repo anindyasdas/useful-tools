@@ -160,7 +160,7 @@ x = re.findall("\W", txt)
 ```
 
 ### Regex 15:
-- \# (): Any subpattern inside a pair of parentheses will be captured as a group using ( and ). In practice, this can be used to extract information like phone numbers or emails from all sorts of data.
+-  (): Any subpattern inside a pair of parentheses will be captured as a group using ( and ). In practice, this can be used to extract information like phone numbers or emails from all sorts of data.
 
 ```python
 file_name='IMG2024.png'
