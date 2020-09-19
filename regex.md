@@ -61,7 +61,7 @@ x = re.findall("he.*o", txt)
 ```
 
 ### Regex 6:
-- + one or more occurrences
+- \+ one or more occurrences
 ```python
 txt = "m ma mab mabi mabin mabii mabiiii mabiiiinlp"
 #Check if the string contains "ab" followed by 1 or more "i" characters
