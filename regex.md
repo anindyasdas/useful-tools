@@ -100,10 +100,9 @@ x=pat.findall(txt)
 ```
 
 ### Regex 9:
-
+- \d #Check if the string contains any digits (numbers from 0-9):
 ```python
 txt = "I love you 3000 , I love you 4000"
-\d #Check if the string contains any digits (numbers from 0-9):
 x = re.findall("\d", txt)
 ['3', '0', '0', '0', '4', '0', '0', '0']
 x = re.findall("\d+", txt)
