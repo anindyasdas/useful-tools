@@ -25,3 +25,19 @@ re.findall('^[A-Z]{5}[0-9]{4}[A-Z]{4}[0-9]{1}$', 'ABCDE1234DGHI9')
 #match: 'ABCDE1234DGHI9'
 #not_match: 'ABCDE1234DGHI9l', 'aABCDE1234DGHI9'
 ```
+### Regex 2:
+```python
+txt = "The rain in Spain"
+#Find all lower case characters alphabetically between "a" and "m":
+re.findall("[a-m]", txt)
+#output: ['h', 'e', 'a', 'i', 'i', 'a', 'i']
+```
+### Regex 3:
+
+- . Any character (except newline character)
+```python
+txt = "welcomehello world"
+x = re.findall("he..o", txt)
+#output: ['hello']
+#Search for a sequence that starts with "he", followed by two (any) characters, and an "o"
+```
