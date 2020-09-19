@@ -7,9 +7,9 @@
 
 ### Regex 0:
 - ^ works as complement
-``
+```
 txt = "The rain in Spain" <br>
 #Check if the string has other characters than a, r, or n:
 x = re.findall("[^arn]", txt)
 ['T', 'h', 'e', ' ', 'i', ' ', 'i', ' ', 'S', 'p', 'i']
-``
+```
