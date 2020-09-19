@@ -17,10 +17,10 @@ x = re.findall("[^arn]", txt)
 - ^carrot beginning of string
 - {}	Exactly the specified number of occurrences
 - $ end of string
-```pthon
+```python
 pattern=re.compile('^[A-Z]{5}[0-9]{4}[A-Z]{4}[0-9]{1}$')
 pattern.findall(string)
-- #or 
+#or 
 re.findall('^[A-Z]{5}[0-9]{4}[A-Z]{4}[0-9]{1}$', 'ABCDE1234DGHI9')
 #match: 'ABCDE1234DGHI9'
 #not_match: 'ABCDE1234DGHI9l', 'aABCDE1234DGHI9'
