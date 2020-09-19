@@ -287,10 +287,12 @@ x = re.split("\s", txt, 1)
 #Replace every white-space character with the number XX
 txt = "I love you \n 3000 , I love \t you,  4000!"
 x = re.sub("\s", "XX", txt)
+print(x)
 IXXloveXXyouXXXXXX3000XX,XXIXXloveXXXXXXyou,XXXX4000!
 
-Replace the first 2 occurrences:
+#Replace the first 2 occurrences:
 x = re.sub("\s", "XX", txt,2)
+print(x)
 IXXloveXXyou 
  3000 , I love 	 you,  4000!
 ```
