@@ -223,11 +223,15 @@ x = re.findall(r"\Bain", txt)
 ```
 ### Regex 19:
 - Look around (Look ahead and look backward)
-- Look around do not consume characters in the string, but only assert whether a match is possible or not
+- Look around do not consume characters in the string, but only assert whether a match is possible or not.
+
 **Look Ahead**
+
 - The lookahead itself is not a capturing group. It is not included in the count towards numbering the backreferences.
 - In order to store the match of the regex inside a lookahead, one has to put capturing parentheses around the regex : (?=(regex))
+
 *positive look ahead*
+
 - It matchs something that is followed by something else eg. ol(?=k) it matches 'ol' that is followed by 'k' without making the capturing group 'k' as part of the match 
 
 ```python
@@ -246,10 +250,13 @@ re.findall('ol(?!ka)',txt)
 re.findall('ol(?!ki)',txt)
 ['ol']
 ```
-- As the name suggest look ahead looks ahead and after matching regex engine goes back to actual position so 'ol(?=k)a' expression first matches 'ol' then look ahead to match 'k' and regex engine then goes back to actual position i.e 'l' now the token 'a' is matched to 'l', so basically it tries to match 'k' and 'a' to the same position in the string and always fail, this not not issue with look behind and Look behind can be used in any position
+- As the name suggest look ahead looks ahead and after matching regex engine goes back to actual position so 'ol(?=k)a' expression first matches 'ol' then look ahead to match 'k' and regex engine then goes back to actual position i.e 'l' now the token 'a' is matched to 'l', so basically it tries to match 'k' and 'a' to the same position in the string and always fail, this not not issue with look behind and Look behind can be used in any position.
+
 **Look behind**
+
 - It tells the regex engine to temporarily step backwards in the string, to check if the text inside the lookbehind can be matched there. (?<!a)b matches a “b” that is not preceded by an “a”, using negative lookbehind.
-*positive look behind (?<=a)b*
+
+*Positive look behind (?<=a)b*
 ```python
 txt='I live in kolkata'
 re.findall('(?<=ka)ta',txt)
