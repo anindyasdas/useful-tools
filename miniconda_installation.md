@@ -45,6 +45,7 @@ conda info -e
   ```
   conda config --prepend envs_dirs /home/name/anaconda3/envs
   ```
+ ### Activate Virtual Environment
 - Activate a virtual environment:
 ```
 conda activate py37
