@@ -32,16 +32,16 @@ conda remove --name p37 --all
 ```
 conda info -e
 ```
-- Names and prefixes
-  For a Conda env to have a name it must be installed in one of the envs_dirs directories
+### Names and prefixes ###
+- For a Conda env to have a name it must be installed in one of the envs_dirs directories
   ```
   conda config --show envs_dirs
   ```
-  Creating an env outside of one of those forfeits its "name-ability". Instead, one must use the path (called its prefix) to activate it, e.g.
+- Creating an env outside of one of those forfeits its "name-ability". Instead, one must use the path (called its prefix) to activate it, e.g.
   ```
   conda activate /home/name/anaconda3/envs/my_env_name
   ```
-  Adding Other Env Locations
+- Adding Other Env Locations
   ```
   conda config --prepend envs_dirs /home/name/anaconda3/envs
   ```
