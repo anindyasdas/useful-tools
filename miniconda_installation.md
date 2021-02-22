@@ -19,6 +19,10 @@ conda --version
 ```
 conda update conda
 ```
+- conda: not found
+```
+export PATH="/home01/anindya.sundardas/miniconda3/bin:$PATH"
+```
 ## Virtual Environment ##
 - Create new virtual environments ( here env name py37, version 3.7 or whatever version you like)
 ```
