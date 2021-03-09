@@ -1,3 +1,4 @@
+## KILL the Server running locally at any port(8080,9000,8000,9999)
 - list the processes running at the port 9997
 ```
 lsof -i:9997
