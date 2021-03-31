@@ -78,3 +78,31 @@ conda update {package_name}
 ```
 conda search {package_name}*
 ```
+-  To use explicit specification files to build an identical conda environment
+-- Specification files looks like :
+```
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: osx-64
+@EXPLICIT
+https://repo.anaconda.com/pkgs/free/osx-64/mkl-11.3.3-0.tar.bz2
+https://repo.anaconda.com/pkgs/free/osx-64/numpy-1.11.1-py35_0.tar.bz2
+https://repo.anaconda.com/pkgs/free/osx-64/openssl-1.0.2h-1.tar.bz2
+https://repo.anaconda.com/pkgs/free/osx-64/pip-8.1.2-py35_0.tar.bz2
+https://repo.anaconda.com/pkgs/free/osx-64/python-3.5.2-0.tar.bz2
+https://repo.anaconda.com/pkgs/free/osx-64/readline-6.2-2.tar.bz2
+https://repo.anaconda.com/pkgs/free/osx-64/setuptools-25.1.6-py35_0.tar.bz2
+https://repo.anaconda.com/pkgs/free/osx-64/sqlite-3.13.0-0.tar.bz2
+https://repo.anaconda.com/pkgs/free/osx-64/tk-8.5.18-0.tar.bz2
+https://repo.anaconda.com/pkgs/free/osx-64/wheel-0.29.0-py35_0.tar.bz2
+https://repo.anaconda.com/pkgs/free/osx-64/xz-5.2.2-0.tar.bz2
+https://repo.anaconda.com/pkgs/free/osx-64/zlib-1.2.8-3.tar.bz2
+```
+-- To create an environment and install the dependencies in the same environment:
+```
+conda create --name <env> --file <this file>
+```
+-- To install in the current working environment
+```
+conda install --file <this file>
+```
