@@ -98,11 +98,11 @@ https://repo.anaconda.com/pkgs/free/osx-64/wheel-0.29.0-py35_0.tar.bz2
 https://repo.anaconda.com/pkgs/free/osx-64/xz-5.2.2-0.tar.bz2
 https://repo.anaconda.com/pkgs/free/osx-64/zlib-1.2.8-3.tar.bz2
 ```
--- To create an environment and install the dependencies in the same environment:
+1. To create an environment and install the dependencies in the same environment:
 ```
 conda create --name <env> --file <this file>
 ```
--- To install in the current working environment
+2. To install in the current working environment
 ```
 conda install --file <this file>
 ```
