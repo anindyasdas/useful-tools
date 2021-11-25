@@ -1,0 +1,58 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jupyter-anindya2
+  labels:
+    k8s-app: jupyter-anindya2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      k8s-app: jupyter-anindya2
+  template:
+    metadata:
+      labels:
+        k8s-app: jupyter-anindya2
+    spec:
+      containers:
+      - name: jupyter-anindya2-container
+        image: nvcr.io/nvidia/pytorch:21.02-py3 
+        imagePullPolicy: IfNotPresent
+        workingDir: /home01/anindya06.das
+        ports:
+        - containerPort: 8888
+        volumeMounts:
+        - mountPath: /dev/shm
+          name: dshm
+        - mountPath: /home01/anindya06.das
+          name: anindyahome
+        resources:
+          limits:
+            nvidia.com/gpu: 1
+        command: ["jupyter-notebook", "--ip=0.0.0.0",  "--port=8888", "--allow-root"]
+      volumes:
+      - name: dshm
+        emptyDir:
+          medium: Memory
+      - name: anindyahome
+        hostPath:
+        # directory location on host
+          path: /home01/anindya06.das
+          # this field is optional
+          type: Directory
+             
+      restartPolicy: Always   
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    k8s-app: jupyter-anindya2
+  name: jupyter-anindya2
+spec:
+  selector:
+    k8s-app: jupyter-anindya2
+  type: NodePort
+  ports:
+  - port: 8888
+    nodePort: 30997
