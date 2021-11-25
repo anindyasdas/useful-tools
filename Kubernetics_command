@@ -1,3 +1,4 @@
+apply vs create : https://www.containiq.com/post/kubectl-apply-vs-create
 Create a pod
 kubectl apply -f jupyter-anindya2.yaml
 exec
