@@ -96,3 +96,33 @@ Where ‘x’ is an input vector,
 ‘g’ is an attention glimpse performing element wise multiplication between a and z,
 
 and  be the attention network with the parameter
+
+
+1	easy	list of data types	
+
+2	easy	which data type can't be used as key in dict?	
+
+3	Medium	Memory management in python	
+
+4	easy	Types of name spaces	
+
+5	easy	what does empty class mean?	
+
+6	easy	why python is called  interpreted language.?	
+
+7	easy	decorators in Python?	
+
+8	Medium	What are Dict and List comprehensions?	
+
+9	easy	
+What is PYTHONPATH?
+
+
+
+10	Medium	
+What is pickling and unpickling?
+
+
+
+11	Medium	
+generators in python
