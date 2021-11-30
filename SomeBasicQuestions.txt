@@ -1,0 +1,98 @@
+Coding Questions
+strings, dp	medium	
+Longest Common Subsequence (LCS) by repeatedly swapping characters of a string with characters of another string
+
+https://www.geeksforgeeks.org/longest-common-subsequence-lcs-by-repeatedly-swapping-characters-of-a-string-with-characters-of-another-string/
+greedy	hard	
+Huffman Coding
+
+https://www.geeksforgeeks.org/huffman-coding-greedy-algo-3/
+greedy	medium	
+Count number of ways to reach destination in a Maze
+
+https://www.geeksforgeeks.org/count-number-ways-reach-destination-maze/?ref=lbp
+sorting	medium	
+Topological Sorting
+
+https://www.geeksforgeeks.org/topological-sorting/?ref=leftbar-rightbar
+graph	wasy	
+Depth First Search or DFS for a Graph
+
+https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/?ref=leftbar-rightbar
+concept	easy	copy vs deepcopy in python	https://www.programiz.com/python-programming/shallow-deep-copy
+
+NLP Questions
+easy	
+What is embedding?
+
+The vector representation of words is also known as word embedding. It refers to representing the words in the vector format. It helps to find the meaning of symbols so that it can make predictions.
+easy	
+What is a one-hot encoding?
+
+In this technique, the representation of words is done as a group of vectors of a total number of words.
+
+For example: The man lives in the street. The arrangement of words is done in an ascending order such as in lives man street the. Now the order in which word comes in a sentence is marked 1 else 0.
+
+Total number of words: 5 hence vector size is 5. In the end, the vectors of each word are joined to give a representation of a whole sentence.
+
+easy	
+What is an underfit and overfit condition?
+
+The underfit condition arises when the model is not able to classify data. The situation occurs when data is not enough, or the model is linear or nonlinear.
+The overfit situation arises when we train the model with a large amount of data, which leads to processing the data with noise and less accuracy. The non-linear model is the reason for overfitting.
+easy	
+Explain the concept of the ROC curve.
+
+The ROC (Receiver Operating Characteristics) curve is the important evaluation metric which checks if the model can classify different classes of the model. The value 1 shows that it has the proper ability of classification, and 0 shows no ability of classification, and 0.5 shows no capability of classification.
+easy	
+What is the F1 score?
+
+F1 score is the test for performance, which considers false positives and false negatives. Recall and precision help to calculate the F1 score. The calculated harmonic mean with the use of recall and precision is the f1 score.
+
+It ranges between 0 and 1 where 0 represents the worst value and 1 is the best. It is the result of the balance between precision and recall.
+
+easy	
+What are type I and type II errors?
+
+On the axis of prediction and actual result, the error can arise of two types:
+
+1. Type I error- The error which arises when the model results as true when it has not occurred actually. It is a false positive value.
+
+2. Type II error- The error which arises when a false hypothesis results as true in the research. It is a false negative value.
+
+easy	
+ Explain Recall and Precision.
+
+Precision and Recall are the performance metrics i.e., they give insight about the model performance.
+
+Precision: The quotient of true result to the actual result. It gives the percentage of true positive to the sum of a true positive and false positive.
+Recall: It is the quotient of true results to the predicted result. It gives the percentage of true positive to the sum of a true positive and false negative.
+easy	Difference between continuous bag of words and skip-gram model of word to vec	
+# In continuous bag of words:
+
+The aim is to fill in the missing word given its neighboring context. 
+
+For example: given “When”, “in”, “____”, “speak”, “French”. The algorithm learns for “France” to be the obvious choice.
+
+# In skip gram model
+
+Given a word, the algorithm predict its context. 
+
+So from the above example: given France (Input layer) predict ‘When’, ‘in’, ‘speak’, ‘French’ (Output) as its neighboring words.
+
+hard	What is attention mechanism ?	
+Attention mechanism in Neural networks, also known as neural attentions are equipped with the ability to focus on a subset of its inputs.
+
+Attention can be implemented as ,
+
+
+
+Where ‘x’ is an input vector,
+
+‘z’ feature vector,
+
+‘a’ is an attention vector, 
+
+‘g’ is an attention glimpse performing element wise multiplication between a and z,
+
+and  be the attention network with the parameter
