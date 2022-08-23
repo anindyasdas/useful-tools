@@ -106,3 +106,11 @@ conda create --name <env> --file <this file>
 ```
 conda install --file <this file>
 ```
+3. Export conda env into a new yml file
+```
+conda env export > environment_extract.yml
+```
+4. Create conda env from yaml file (before that change the conda environment name)
+```
+conda env create -f environment_extract.yml
+```
